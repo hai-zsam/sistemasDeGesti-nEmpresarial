@@ -1,0 +1,15 @@
+import {Component, CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
+import { IonApp, IonRouterOutlet } from '@ionic/angular';
+import {register} from "swiper/element";
+register();
+
+
+@Component({
+  selector: 'app-root',
+  templateUrl: 'app.component.html',
+  imports: [IonApp, IonRouterOutlet],
+})
+export class AppComponent {
+  constructor() {
+  }
+}
